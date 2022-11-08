@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <title>Procurement</title>
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./assets/styles/style.css">
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <!-- navbar expanded when large  -->
+            <div class="container-fluid">
+                <!-- Width 100% at all breakpoints for "container-fluid" -->
+                <a class="navbar-brand" href="#">Procurement</a> <!-- navbar-brand used for nav heading -->
+
+                <!-- Navbar Toggle Button when screen is less than large -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible navbar -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Navbar Content -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pg-home.html"
+                                target="mainIframe">Home</a>
+                        </li>
+                        <!-- Purchase Order -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Purchase Order
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pg-po-create.html" target="mainIframe">Create New
+                                        PO</a></li>
+                                <li><a class="dropdown-item" href="./pg-po-pending.html" target="mainIframe">View Purchase Orders</a></li>
+                                <!-- <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                            </ul>
+                        </li>
+                        <!-- Vendors -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Vendors
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pg-po-pending.html" target="mainIframe">Add Vendor</a></li>
+                                <li><a class="dropdown-item" href="./pg-po-pending.html" target="mainIframe">All Vendors</a></li>
+                                <!-- <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                            </ul>
+                        </li>
+                        <!-- Site Details -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Site
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pg-po-pending.html" target="mainIframe">Add Site</a></li>
+                                <li><a class="dropdown-item" href="./pg-po-pending.html" target="mainIframe">All Site</a></li>
+                                <!-- <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                            </ul>
+                        </li>
+                        
+
+                        <!-- Managers Details -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Managers</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="https://www.bing.com" target="mainIframe">Link</a>
+                        </li> -->
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li> -->
+                        
+                        <!-- LOGOUT -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Accounts
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pg-po-pending.html" target="mainIframe">Account Settings</a></li>
+                                <li><a class="dropdown-item" href="./pg-login.html">Logout</a></li>
+                                <!-- <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                            </ul>
+                        </li>
+
+                        
+                    </ul>
+                    <!-- Navbar Search form -->
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="#main">
+
+        <!-- <iframe name="mainIframe" src="./pg-po-create.html" frameborder="1px"></iframe> -->
+        <iframe name="mainIframe" src="./pg-home.html" frameborder="1px"></iframe>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <!-- Custom js deferred -->
+    <script src="./assets/script/script.js"></script>
+</body>
+
+</html>
